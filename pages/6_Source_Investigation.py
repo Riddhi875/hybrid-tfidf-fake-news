@@ -6,7 +6,7 @@ import streamlit as st
 
 from src.evidence_search import build_search_links, fetch_newsapi_headlines, newsapi_configured
 from src.ui import apply_theme, init_state
-
+from src.ui_theme import apply_theme
 apply_theme()
 init_state()
 

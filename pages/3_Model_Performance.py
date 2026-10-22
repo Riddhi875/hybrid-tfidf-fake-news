@@ -12,7 +12,7 @@ import streamlit as st
 
 from config import LABEL_FAKE, LABEL_REAL, METRICS_PATH
 from src.ui import apply_theme, init_state, require_models
-
+from src.ui_theme import apply_theme
 apply_theme()
 init_state()
 

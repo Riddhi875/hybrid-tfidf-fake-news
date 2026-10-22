@@ -9,7 +9,7 @@ import streamlit as st
 from config import LABEL_FAKE, LABEL_REAL
 from src.dataset_analysis import class_term_tables, dataset_overview, length_histograms
 from src.ui import apply_theme, init_state
-
+from src.ui_theme import apply_theme
 apply_theme()
 init_state()
 

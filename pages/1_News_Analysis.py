@@ -6,7 +6,7 @@ import streamlit as st
 
 from config import MAX_INPUT_CHARS, MAX_UPLOAD_BYTES, SAMPLES_DIR
 from src.ui import apply_theme, init_state, render_prediction, require_models, run_analysis
-
+from src.ui_theme import apply_theme
 apply_theme()
 init_state()
 

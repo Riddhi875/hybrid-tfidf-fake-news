@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 from src.ui import apply_theme, init_state
-
+from src.ui_theme import apply_theme
 apply_theme()
 init_state()
 
