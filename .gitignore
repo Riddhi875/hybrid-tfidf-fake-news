@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local config
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Datasets (large; keep README)
+data/*.csv
+data/*.zip
+
+# Serialized models (train locally from trusted data)
+models/*.joblib
+models/*.pkl
+models/*.pickle
+
+# Generated artifacts
+outputs/*.png
+outputs/*.json
+outputs/*.txt
+outputs/reports/
+!outputs/.gitkeep
+!models/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

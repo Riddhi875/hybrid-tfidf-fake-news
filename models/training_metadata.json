@@ -1,0 +1,132 @@
+{
+  "trained_at_utc": "2026-10-22T19:18:32.519771+00:00",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "label_mapping": {
+    "fake": 0,
+    "real": 1
+  },
+  "tfidf_params": {
+    "stop_words": "english",
+    "max_df": 0.7,
+    "lowercase": true,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "min_df": 1
+  },
+  "lr_params": {
+    "max_iter": 1000,
+    "solver": "lbfgs"
+  },
+  "nb_params": {
+    "alpha": 1.0
+  },
+  "svm_params": {
+    "max_iter": 2000,
+    "dual": "auto"
+  },
+  "hybrid_formula": "hybrid_P_real = (P_LR(real) + P_NB(real)) / 2",
+  "hybrid_threshold": 0.5,
+  "content_construction": "title + ' ' + text, matching the original script",
+  "vectorizer_fit": "training split only",
+  "cleaning_stats": {
+    "fake_raw_rows": 23481,
+    "true_raw_rows": 21417,
+    "fake_missing": {
+      "title": 0,
+      "text": 0,
+      "subject": 0,
+      "date": 0
+    },
+    "true_missing": {
+      "title": 0,
+      "text": 0,
+      "subject": 0,
+      "date": 0
+    },
+    "fake_exact_duplicate_rows": 3,
+    "true_exact_duplicate_rows": 206,
+    "label_mapping": {
+      "fake": 0,
+      "real": 1
+    },
+    "columns": {
+      "fake": [
+        "title",
+        "text",
+        "subject",
+        "date"
+      ],
+      "true": [
+        "title",
+        "text",
+        "subject",
+        "date"
+      ]
+    },
+    "combined_rows_before_cleaning": 44898,
+    "empty_content_before": 0,
+    "reuters_share_by_label": {
+      "0": 0.0003832886163280951,
+      "1": 0.9920623803520567
+    },
+    "rows_with_empty_body_kept_via_title": 631,
+    "duplicate_content_rows": 5798,
+    "usable_rows": 39100,
+    "class_counts": {
+      "fake": 17905,
+      "real": 21195
+    },
+    "subjects": [
+      {
+        "source_file": "Fake.csv",
+        "subject": "Government News",
+        "count": 531
+      },
+      {
+        "source_file": "Fake.csv",
+        "subject": "News",
+        "count": 9050
+      },
+      {
+        "source_file": "Fake.csv",
+        "subject": "US_News",
+        "count": 783
+      },
+      {
+        "source_file": "Fake.csv",
+        "subject": "left-news",
+        "count": 705
+      },
+      {
+        "source_file": "Fake.csv",
+        "subject": "politics",
+        "count": 6836
+      },
+      {
+        "source_file": "True.csv",
+        "subject": "politicsNews",
+        "count": 11216
+      },
+      {
+        "source_file": "True.csv",
+        "subject": "worldnews",
+        "count": 9979
+      }
+    ]
+  },
+  "vocabulary_size": 109200,
+  "train_rows": 31280,
+  "test_rows": 7820,
+  "class_counts_train": {
+    "fake": 14324,
+    "real": 16956
+  },
+  "class_counts_test": {
+    "fake": 3581,
+    "real": 4239
+  },
+  "warning": "Load serialized models only from this trusted training run."
+}
